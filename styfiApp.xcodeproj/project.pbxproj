@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14AB254ABD8D3A3CA9B95C2C /* Pods_styfiApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A104A0E499B1AE3CC3C02B6 /* Pods_styfiApp.framework */; };
 		3DD8876D1E1CE61E00638FC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD8876C1E1CE61E00638FC3 /* AppDelegate.swift */; };
 		3DD8876F1E1CE61E00638FC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD8876E1E1CE61E00638FC3 /* ViewController.swift */; };
 		3DD887721E1CE61E00638FC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD887701E1CE61E00638FC3 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A9B3F8952BEAF9764FEB046 /* Pods-styfiApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-styfiApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-styfiApp/Pods-styfiApp.release.xcconfig"; sourceTree = "<group>"; };
 		3DD887691E1CE61E00638FC3 /* styfiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = styfiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD8876C1E1CE61E00638FC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DD8876E1E1CE61E00638FC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,9 @@
 		3DD887731E1CE61E00638FC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DD887761E1CE61E00638FC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DD887781E1CE61E00638FC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DD8877E1E1CE75F00638FC3 /* styfiApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = styfiApp.entitlements; sourceTree = "<group>"; };
+		8A104A0E499B1AE3CC3C02B6 /* Pods_styfiApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_styfiApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF48C921327EABDD9B2C2F91 /* Pods-styfiApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-styfiApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-styfiApp/Pods-styfiApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14AB254ABD8D3A3CA9B95C2C /* Pods_styfiApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +46,8 @@
 			children = (
 				3DD8876B1E1CE61E00638FC3 /* styfiApp */,
 				3DD8876A1E1CE61E00638FC3 /* Products */,
+				819F0EEAC3ED8BE52F34C092 /* Pods */,
+				D657B712822FE5B18E9E50BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +62,7 @@
 		3DD8876B1E1CE61E00638FC3 /* styfiApp */ = {
 			isa = PBXGroup;
 			children = (
+				3DD8877E1E1CE75F00638FC3 /* styfiApp.entitlements */,
 				3DD8876C1E1CE61E00638FC3 /* AppDelegate.swift */,
 				3DD8876E1E1CE61E00638FC3 /* ViewController.swift */,
 				3DD887701E1CE61E00638FC3 /* Main.storyboard */,
@@ -64,6 +73,23 @@
 			path = styfiApp;
 			sourceTree = "<group>";
 		};
+		819F0EEAC3ED8BE52F34C092 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF48C921327EABDD9B2C2F91 /* Pods-styfiApp.debug.xcconfig */,
+				0A9B3F8952BEAF9764FEB046 /* Pods-styfiApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D657B712822FE5B18E9E50BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A104A0E499B1AE3CC3C02B6 /* Pods_styfiApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +97,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DD8877B1E1CE61E00638FC3 /* Build configuration list for PBXNativeTarget "styfiApp" */;
 			buildPhases = (
+				7E9127A5607BF5035100C045 /* [CP] Check Pods Manifest.lock */,
 				3DD887651E1CE61E00638FC3 /* Sources */,
 				3DD887661E1CE61E00638FC3 /* Frameworks */,
 				3DD887671E1CE61E00638FC3 /* Resources */,
+				15B0A93DCDD930F494C8B506 /* [CP] Embed Pods Frameworks */,
+				2D58DC0F784D875ED1EC5EB8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -98,6 +127,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = QY8PV2R65U;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -131,6 +165,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15B0A93DCDD930F494C8B506 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-styfiApp/Pods-styfiApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D58DC0F784D875ED1EC5EB8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-styfiApp/Pods-styfiApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E9127A5607BF5035100C045 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3DD887651E1CE61E00638FC3 /* Sources */ = {
@@ -259,9 +341,15 @@
 		};
 		3DD8877C1E1CE61E00638FC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF48C921327EABDD9B2C2F91 /* Pods-styfiApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = styfiApp/styfiApp.entitlements;
 				DEVELOPMENT_TEAM = QY8PV2R65U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = styfiApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theiOSDeveloper.styfiApp;
@@ -272,9 +360,15 @@
 		};
 		3DD8877D1E1CE61E00638FC3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A9B3F8952BEAF9764FEB046 /* Pods-styfiApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = styfiApp/styfiApp.entitlements;
 				DEVELOPMENT_TEAM = QY8PV2R65U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = styfiApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theiOSDeveloper.styfiApp;
@@ -302,6 +396,7 @@
 				3DD8877D1E1CE61E00638FC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
