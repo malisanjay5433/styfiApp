@@ -9,22 +9,26 @@
 /* Begin PBXBuildFile section */
 		14AB254ABD8D3A3CA9B95C2C /* Pods_styfiApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A104A0E499B1AE3CC3C02B6 /* Pods_styfiApp.framework */; };
 		3DD8876D1E1CE61E00638FC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD8876C1E1CE61E00638FC3 /* AppDelegate.swift */; };
-		3DD8876F1E1CE61E00638FC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD8876E1E1CE61E00638FC3 /* ViewController.swift */; };
+		3DD8876F1E1CE61E00638FC3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD8876E1E1CE61E00638FC3 /* HomeViewController.swift */; };
 		3DD887721E1CE61E00638FC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD887701E1CE61E00638FC3 /* Main.storyboard */; };
 		3DD887741E1CE61E00638FC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DD887731E1CE61E00638FC3 /* Assets.xcassets */; };
 		3DD887771E1CE61E00638FC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD887751E1CE61E00638FC3 /* LaunchScreen.storyboard */; };
+		3DD887871E1D01C300638FC3 /* Brand_Info_Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD887861E1D01C300638FC3 /* Brand_Info_Model.swift */; };
+		3DD8878B1E1D171800638FC3 /* AddCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD8878A1E1D171800638FC3 /* AddCartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0A9B3F8952BEAF9764FEB046 /* Pods-styfiApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-styfiApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-styfiApp/Pods-styfiApp.release.xcconfig"; sourceTree = "<group>"; };
-		3DD887691E1CE61E00638FC3 /* styfiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = styfiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DD887691E1CE61E00638FC3 /* StyfiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StyfiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD8876C1E1CE61E00638FC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3DD8876E1E1CE61E00638FC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3DD8876E1E1CE61E00638FC3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3DD887711E1CE61E00638FC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3DD887731E1CE61E00638FC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DD887761E1CE61E00638FC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DD887781E1CE61E00638FC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DD8877E1E1CE75F00638FC3 /* styfiApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = styfiApp.entitlements; sourceTree = "<group>"; };
+		3DD887861E1D01C300638FC3 /* Brand_Info_Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brand_Info_Model.swift; sourceTree = "<group>"; };
+		3DD8878A1E1D171800638FC3 /* AddCartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCartViewController.swift; sourceTree = "<group>"; };
 		8A104A0E499B1AE3CC3C02B6 /* Pods_styfiApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_styfiApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF48C921327EABDD9B2C2F91 /* Pods-styfiApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-styfiApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-styfiApp/Pods-styfiApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -44,7 +48,7 @@
 		3DD887601E1CE61E00638FC3 = {
 			isa = PBXGroup;
 			children = (
-				3DD8876B1E1CE61E00638FC3 /* styfiApp */,
+				3DD8876B1E1CE61E00638FC3 /* StyfiApp */,
 				3DD8876A1E1CE61E00638FC3 /* Products */,
 				819F0EEAC3ED8BE52F34C092 /* Pods */,
 				D657B712822FE5B18E9E50BC /* Frameworks */,
@@ -54,23 +58,50 @@
 		3DD8876A1E1CE61E00638FC3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3DD887691E1CE61E00638FC3 /* styfiApp.app */,
+				3DD887691E1CE61E00638FC3 /* StyfiApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3DD8876B1E1CE61E00638FC3 /* styfiApp */ = {
+		3DD8876B1E1CE61E00638FC3 /* StyfiApp */ = {
 			isa = PBXGroup;
 			children = (
+				3DD8878E1E1D1C0500638FC3 /* View */,
+				3DD8878D1E1D1BF800638FC3 /* Controller */,
+				3DD8878C1E1D1BEF00638FC3 /* Model */,
 				3DD8877E1E1CE75F00638FC3 /* styfiApp.entitlements */,
 				3DD8876C1E1CE61E00638FC3 /* AppDelegate.swift */,
-				3DD8876E1E1CE61E00638FC3 /* ViewController.swift */,
-				3DD887701E1CE61E00638FC3 /* Main.storyboard */,
 				3DD887731E1CE61E00638FC3 /* Assets.xcassets */,
-				3DD887751E1CE61E00638FC3 /* LaunchScreen.storyboard */,
 				3DD887781E1CE61E00638FC3 /* Info.plist */,
 			);
+			name = StyfiApp;
 			path = styfiApp;
+			sourceTree = "<group>";
+		};
+		3DD8878C1E1D1BEF00638FC3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3DD887861E1D01C300638FC3 /* Brand_Info_Model.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3DD8878D1E1D1BF800638FC3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3DD8876E1E1CE61E00638FC3 /* HomeViewController.swift */,
+				3DD8878A1E1D171800638FC3 /* AddCartViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3DD8878E1E1D1C0500638FC3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3DD887701E1CE61E00638FC3 /* Main.storyboard */,
+				3DD887751E1CE61E00638FC3 /* LaunchScreen.storyboard */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		819F0EEAC3ED8BE52F34C092 /* Pods */ = {
@@ -93,9 +124,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3DD887681E1CE61E00638FC3 /* styfiApp */ = {
+		3DD887681E1CE61E00638FC3 /* StyfiApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3DD8877B1E1CE61E00638FC3 /* Build configuration list for PBXNativeTarget "styfiApp" */;
+			buildConfigurationList = 3DD8877B1E1CE61E00638FC3 /* Build configuration list for PBXNativeTarget "StyfiApp" */;
 			buildPhases = (
 				7E9127A5607BF5035100C045 /* [CP] Check Pods Manifest.lock */,
 				3DD887651E1CE61E00638FC3 /* Sources */,
@@ -108,9 +139,9 @@
 			);
 			dependencies = (
 			);
-			name = styfiApp;
+			name = StyfiApp;
 			productName = styfiApp;
-			productReference = 3DD887691E1CE61E00638FC3 /* styfiApp.app */;
+			productReference = 3DD887691E1CE61E00638FC3 /* StyfiApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -135,7 +166,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3DD887641E1CE61E00638FC3 /* Build configuration list for PBXProject "styfiApp" */;
+			buildConfigurationList = 3DD887641E1CE61E00638FC3 /* Build configuration list for PBXProject "StyfiApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -148,7 +179,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3DD887681E1CE61E00638FC3 /* styfiApp */,
+				3DD887681E1CE61E00638FC3 /* StyfiApp */,
 			);
 		};
 /* End PBXProject section */
@@ -219,8 +250,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DD8876F1E1CE61E00638FC3 /* ViewController.swift in Sources */,
+				3DD8876F1E1CE61E00638FC3 /* HomeViewController.swift in Sources */,
+				3DD887871E1D01C300638FC3 /* Brand_Info_Model.swift in Sources */,
 				3DD8876D1E1CE61E00638FC3 /* AppDelegate.swift in Sources */,
+				3DD8878B1E1D171800638FC3 /* AddCartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,8 +384,9 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = styfiApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.theiOSDeveloper.styfiApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.theiOSDeveloper.StyfiApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -370,8 +404,9 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = styfiApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.theiOSDeveloper.styfiApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.theiOSDeveloper.StyfiApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -380,7 +415,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3DD887641E1CE61E00638FC3 /* Build configuration list for PBXProject "styfiApp" */ = {
+		3DD887641E1CE61E00638FC3 /* Build configuration list for PBXProject "StyfiApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3DD887791E1CE61E00638FC3 /* Debug */,
@@ -389,7 +424,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3DD8877B1E1CE61E00638FC3 /* Build configuration list for PBXNativeTarget "styfiApp" */ = {
+		3DD8877B1E1CE61E00638FC3 /* Build configuration list for PBXNativeTarget "StyfiApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3DD8877C1E1CE61E00638FC3 /* Debug */,
