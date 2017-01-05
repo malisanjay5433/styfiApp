@@ -25,13 +25,13 @@ class AddCartViewController: UIViewController,UITextFieldDelegate,UIPickerViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePicker.delegate = self
+        self.view.backgroundColor = UIColor.gray
         self.brand_name.delegate = self
         self.brand_desc.delegate = self
         self.product_Count.delegate = self
         self.last_modified.delegate = self
         config_picker()
         appTitle()
-        self.view.backgroundColor = UIColor.init(red: 235/255, green:235/255, blue: 235, alpha: 1.0)
         let tap = UITapGestureRecognizer(target: self, action: #selector(AddCartViewController.selectPhotos))
         logo.isUserInteractionEnabled = true
         logo.addGestureRecognizer(tap)
@@ -39,18 +39,11 @@ class AddCartViewController: UIViewController,UITextFieldDelegate,UIPickerViewDe
 
     }
     func selectPhotos(){
-//        print("Selecte Photos")
-//        imagePicker.allowsEditing = false
-//        imagePicker.sourceType = .photoLibrary
-//        imagePicker.mediaTypes = UIImagePickerController.availableMediaTypes(for: .photoLibrary)!
-//        present(imagePicker, animated: true, completion: nil)
         imagePicker.allowsEditing = false
         imagePicker.sourceType = .photoLibrary
         imagePicker.mediaTypes = UIImagePickerController.availableMediaTypes(for: .photoLibrary)!
         imagePicker.modalPresentationStyle = .popover
         present(imagePicker, animated: true, completion: nil)
-//        imagePicker.popoverPresentationController?.barButtonItem = sender
-        
     }
     func appTitle(){
         let titleLabel = UILabel(frame: CGRect(x:0, y:0, width:view.frame.width - 32, height:view.frame.height))
@@ -101,12 +94,7 @@ class AddCartViewController: UIViewController,UITextFieldDelegate,UIPickerViewDe
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
             logo.image = image
             self.selectedImag = image
-//            let data = NSData(data: UIImageJPEGRepresentation(self.selectedImag!,0.9)!)
             let data = UIImagePNGRepresentation(self.selectedImag!) as NSData?
-//            
-//
-//            let imgPNG = UIImage(data:data as Data,scale:1.0)
-//            let dataPNGImg = NSData(data: UIImagePNGRepresentation(imgPNG!)!)
             self.data = data
             logo.contentMode = .scaleAspectFit
         } else{
