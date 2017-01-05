@@ -8,8 +8,7 @@
 
 import UIKit
 import RealmSwift
-import AlamofireImage
-
+import KRProgressHUD
 class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
     
     
@@ -44,10 +43,11 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         let realm = try! Realm()
         dataSource = realm.objects(Brand_Info_Model.self)
         self.tableView.reloadData()
-        
+        Loader.inst.endLoading()
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        Loader.inst.startLoading()
         reloadTable()
     }
     
@@ -73,26 +73,14 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         let data = dataSource[indexPath.row]
         cell.brandName.text = data.brand_Name
         cell.desc.text = data.brand_Description
-         let logo = UIImage(data:data.brand_Logo as! Data)
-//        if logo == nil{
-//            cell.logo.image = UIImage(named:"add-logo")
-//        }
-        let imageCache = AutoPurgingImageCache()
-        let avatarImage = UIImage(data:data.brand_Logo as! Data)
-        
-        // Add
-        imageCache.add(avatarImage!, withIdentifier: "add-logo")
-        
-        // Fetch
-        let cachedAvatar = imageCache.image(withIdentifier: "add-logo")
-        cell.logo.image = cachedAvatar
-
-        // Remove
-//        imageCache.removeImage(withIdentifier: "add-logo")
+        cell.logo.image = UIImage(named:"add-logo")
+        let logo = UIImage(data:data.brand_Logo as! Data)
         cell.logo.image = logo
         cell.modifiedDate.text  = data.last_Modified_Date
         cell.pcount.text = data.product_Count
         return cell
     }
+    
+   
 }
 
