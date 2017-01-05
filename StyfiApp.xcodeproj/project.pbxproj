@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		14AB254ABD8D3A3CA9B95C2C /* Pods_styfiApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A104A0E499B1AE3CC3C02B6 /* Pods_styfiApp.framework */; };
 		3DD8876D1E1CE61E00638FC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD8876C1E1CE61E00638FC3 /* AppDelegate.swift */; };
 		3DD8876F1E1CE61E00638FC3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD8876E1E1CE61E00638FC3 /* HomeViewController.swift */; };
 		3DD887721E1CE61E00638FC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD887701E1CE61E00638FC3 /* Main.storyboard */; };
@@ -16,10 +15,12 @@
 		3DD887871E1D01C300638FC3 /* Brand_Info_Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD887861E1D01C300638FC3 /* Brand_Info_Model.swift */; };
 		3DD8878B1E1D171800638FC3 /* AddCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD8878A1E1D171800638FC3 /* AddCartViewController.swift */; };
 		3DD887911E1E1B5200638FC3 /* BrandCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD887901E1E1B5200638FC3 /* BrandCell.swift */; };
+		6FE570C43043298CA22C6987 /* Pods_StyfiApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B738D526CDEC1656F0E3247 /* Pods_StyfiApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0A9B3F8952BEAF9764FEB046 /* Pods-styfiApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-styfiApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-styfiApp/Pods-styfiApp.release.xcconfig"; sourceTree = "<group>"; };
+		3B738D526CDEC1656F0E3247 /* Pods_StyfiApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StyfiApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD887691E1CE61E00638FC3 /* StyfiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StyfiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD8876C1E1CE61E00638FC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DD8876E1E1CE61E00638FC3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -31,7 +32,9 @@
 		3DD887861E1D01C300638FC3 /* Brand_Info_Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brand_Info_Model.swift; sourceTree = "<group>"; };
 		3DD8878A1E1D171800638FC3 /* AddCartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCartViewController.swift; sourceTree = "<group>"; };
 		3DD887901E1E1B5200638FC3 /* BrandCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrandCell.swift; sourceTree = "<group>"; };
+		5D6E3EC281991BA54655B53D /* Pods-StyfiApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StyfiApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StyfiApp/Pods-StyfiApp.debug.xcconfig"; sourceTree = "<group>"; };
 		8A104A0E499B1AE3CC3C02B6 /* Pods_styfiApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_styfiApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6EC58335A3235DD8A59C7FB /* Pods-StyfiApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StyfiApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-StyfiApp/Pods-StyfiApp.release.xcconfig"; sourceTree = "<group>"; };
 		DF48C921327EABDD9B2C2F91 /* Pods-styfiApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-styfiApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-styfiApp/Pods-styfiApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -40,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14AB254ABD8D3A3CA9B95C2C /* Pods_styfiApp.framework in Frameworks */,
+				6FE570C43043298CA22C6987 /* Pods_StyfiApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +123,8 @@
 			children = (
 				DF48C921327EABDD9B2C2F91 /* Pods-styfiApp.debug.xcconfig */,
 				0A9B3F8952BEAF9764FEB046 /* Pods-styfiApp.release.xcconfig */,
+				5D6E3EC281991BA54655B53D /* Pods-StyfiApp.debug.xcconfig */,
+				A6EC58335A3235DD8A59C7FB /* Pods-StyfiApp.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -128,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				8A104A0E499B1AE3CC3C02B6 /* Pods_styfiApp.framework */,
+				3B738D526CDEC1656F0E3247 /* Pods_StyfiApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -221,7 +227,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-styfiApp/Pods-styfiApp-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StyfiApp/Pods-StyfiApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2D58DC0F784D875ED1EC5EB8 /* [CP] Copy Pods Resources */ = {
@@ -236,7 +242,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-styfiApp/Pods-styfiApp-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StyfiApp/Pods-StyfiApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7E9127A5607BF5035100C045 /* [CP] Check Pods Manifest.lock */ = {
@@ -388,7 +394,7 @@
 		};
 		3DD8877C1E1CE61E00638FC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF48C921327EABDD9B2C2F91 /* Pods-styfiApp.debug.xcconfig */;
+			baseConfigurationReference = 5D6E3EC281991BA54655B53D /* Pods-StyfiApp.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -409,7 +415,7 @@
 		};
 		3DD8877D1E1CE61E00638FC3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A9B3F8952BEAF9764FEB046 /* Pods-styfiApp.release.xcconfig */;
+			baseConfigurationReference = A6EC58335A3235DD8A59C7FB /* Pods-StyfiApp.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

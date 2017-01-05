@@ -8,6 +8,8 @@
 
 import UIKit
 import RealmSwift
+import AlamofireImage
+
 class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
     
     
@@ -19,6 +21,7 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.contentInset = UIEdgeInsetsMake(8, 0, 8, 0)
+        self.tableView.separatorStyle = .none
         reloadTable()
     }
     
@@ -71,9 +74,21 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         cell.brandName.text = data.brand_Name
         cell.desc.text = data.brand_Description
          let logo = UIImage(data:data.brand_Logo as! Data)
-        if logo == nil{
-            cell.logo.image = UIImage(named:"add-logo")
-        }
+//        if logo == nil{
+//            cell.logo.image = UIImage(named:"add-logo")
+//        }
+        let imageCache = AutoPurgingImageCache()
+        let avatarImage = UIImage(data:data.brand_Logo as! Data)
+        
+        // Add
+        imageCache.add(avatarImage!, withIdentifier: "add-logo")
+        
+        // Fetch
+        let cachedAvatar = imageCache.image(withIdentifier: "add-logo")
+        cell.logo.image = cachedAvatar
+
+        // Remove
+//        imageCache.removeImage(withIdentifier: "add-logo")
         cell.logo.image = logo
         cell.modifiedDate.text  = data.last_Modified_Date
         cell.pcount.text = data.product_Count
