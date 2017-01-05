@@ -12,6 +12,6 @@ class Brand_Info_Model:Object{
     dynamic var brand_Name = ""
     dynamic var brand_Description = ""
     dynamic var brand_Logo:NSData?
-    dynamic var product_Count = 0
-    dynamic var last_Modified_Date:NSDate?
+    dynamic var product_Count = ""
+    dynamic var last_Modified_Date = ""
 }

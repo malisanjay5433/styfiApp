@@ -15,6 +15,7 @@
 		3DD887771E1CE61E00638FC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD887751E1CE61E00638FC3 /* LaunchScreen.storyboard */; };
 		3DD887871E1D01C300638FC3 /* Brand_Info_Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD887861E1D01C300638FC3 /* Brand_Info_Model.swift */; };
 		3DD8878B1E1D171800638FC3 /* AddCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD8878A1E1D171800638FC3 /* AddCartViewController.swift */; };
+		3DD887911E1E1B5200638FC3 /* BrandCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD887901E1E1B5200638FC3 /* BrandCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		3DD8877E1E1CE75F00638FC3 /* styfiApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = styfiApp.entitlements; sourceTree = "<group>"; };
 		3DD887861E1D01C300638FC3 /* Brand_Info_Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brand_Info_Model.swift; sourceTree = "<group>"; };
 		3DD8878A1E1D171800638FC3 /* AddCartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCartViewController.swift; sourceTree = "<group>"; };
+		3DD887901E1E1B5200638FC3 /* BrandCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrandCell.swift; sourceTree = "<group>"; };
 		8A104A0E499B1AE3CC3C02B6 /* Pods_styfiApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_styfiApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF48C921327EABDD9B2C2F91 /* Pods-styfiApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-styfiApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-styfiApp/Pods-styfiApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +68,7 @@
 		3DD8876B1E1CE61E00638FC3 /* StyfiApp */ = {
 			isa = PBXGroup;
 			children = (
+				3DD8878F1E1E1B3300638FC3 /* Cell */,
 				3DD8878E1E1D1C0500638FC3 /* View */,
 				3DD8878D1E1D1BF800638FC3 /* Controller */,
 				3DD8878C1E1D1BEF00638FC3 /* Model */,
@@ -102,6 +105,14 @@
 				3DD887751E1CE61E00638FC3 /* LaunchScreen.storyboard */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		3DD8878F1E1E1B3300638FC3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3DD887901E1E1B5200638FC3 /* BrandCell.swift */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 		819F0EEAC3ED8BE52F34C092 /* Pods */ = {
@@ -250,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DD887911E1E1B5200638FC3 /* BrandCell.swift in Sources */,
 				3DD8876F1E1CE61E00638FC3 /* HomeViewController.swift in Sources */,
 				3DD887871E1D01C300638FC3 /* Brand_Info_Model.swift in Sources */,
 				3DD8876D1E1CE61E00638FC3 /* AppDelegate.swift in Sources */,
@@ -297,6 +309,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -347,6 +360,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -376,6 +390,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DF48C921327EABDD9B2C2F91 /* Pods-styfiApp.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = styfiApp/styfiApp.entitlements;
 				DEVELOPMENT_TEAM = QY8PV2R65U;
@@ -396,6 +411,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0A9B3F8952BEAF9764FEB046 /* Pods-styfiApp.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = styfiApp/styfiApp.entitlements;
 				DEVELOPMENT_TEAM = QY8PV2R65U;
