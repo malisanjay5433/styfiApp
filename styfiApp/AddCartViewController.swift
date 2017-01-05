@@ -35,8 +35,8 @@ class AddCartViewController: UIViewController,UITextFieldDelegate,UIPickerViewDe
         let tap = UITapGestureRecognizer(target: self, action: #selector(AddCartViewController.selectPhotos))
         logo.isUserInteractionEnabled = true
         logo.addGestureRecognizer(tap)
-
-
+        
+        
     }
     func selectPhotos(){
         imagePicker.allowsEditing = false
@@ -77,7 +77,7 @@ class AddCartViewController: UIViewController,UITextFieldDelegate,UIPickerViewDe
         toolBar.setItems([cancelButton, spaceButton, doneButton], animated: false)
         toolBar.isUserInteractionEnabled = true
         last_modified.inputAccessoryView = toolBar
-}
+    }
     func date_done(){
         date_start = datePickerView.date
         let dateFormatter = DateFormatter()
@@ -107,22 +107,47 @@ class AddCartViewController: UIViewController,UITextFieldDelegate,UIPickerViewDe
         dismiss(animated: true, completion: nil)
     }
     
-@IBAction func addCart(_ sender: Any) {
+    @IBAction func addCart(_ sender: Any) {
         let name = brand_name.text!
         let desc = brand_desc.text!
         let count = product_Count.text!
         let lastModify = last_modified.text!
         let selected_logo = logo
         if name == ""{
-            print("enter Name")
+            let alert = UIAlertController(title: "", message: "Please enter Brand Name", preferredStyle: UIAlertControllerStyle.alert)
+            alert.view.tintColor = UIColor.red
+            self.present(alert, animated: true, completion: nil)
+            alert.addAction(UIAlertAction(title: "OK", style: .destructive , handler: { action in
+            }))
+            
         }else if desc == "" {
-            print("enter desc")
+            let alert = UIAlertController(title: "", message: "Please enter Description", preferredStyle: UIAlertControllerStyle.alert)
+            alert.view.tintColor = UIColor.red
+            self.present(alert, animated: true, completion: nil)
+            alert.addAction(UIAlertAction(title: "OK", style: .destructive , handler: { action in
+            }))
+            
         }else if count == "" {
             print("enter count")
+            let alert = UIAlertController(title: "", message: "Please enter Product count", preferredStyle: UIAlertControllerStyle.alert)
+            alert.view.tintColor = UIColor.red
+            self.present(alert, animated: true, completion: nil)
+            alert.addAction(UIAlertAction(title: "OK", style: .destructive , handler: { action in
+            }))
         }else if lastModify == "" {
             print("enter lastModify")
+            let alert = UIAlertController(title: "", message: "Please enter Modified Date", preferredStyle: UIAlertControllerStyle.alert)
+            alert.view.tintColor = UIColor.red
+            self.present(alert, animated: true, completion: nil)
+            alert.addAction(UIAlertAction(title: "OK", style: .destructive , handler: { action in
+            }))
         } else if logo == nil {
             print("enter logo")
+            let alert = UIAlertController(title: "", message: "Please add Logo", preferredStyle: UIAlertControllerStyle.alert)
+            alert.view.tintColor = UIColor.red
+            self.present(alert, animated: true, completion: nil)
+            alert.addAction(UIAlertAction(title: "OK", style: .destructive , handler: { action in
+            }))
         }
         else{
             model.brand_Name = name
@@ -133,7 +158,7 @@ class AddCartViewController: UIViewController,UITextFieldDelegate,UIPickerViewDe
             persistData()
             self.dismiss(animated: true, completion: nil)
         }
-}
+    }
     
     
     func persistData(){
@@ -142,7 +167,7 @@ class AddCartViewController: UIViewController,UITextFieldDelegate,UIPickerViewDe
             realm.add(model)
             print("Saved Data")
         }
-}
+    }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true

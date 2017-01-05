@@ -73,8 +73,10 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         let data = dataSource[indexPath.row]
         cell.brandName.text = data.brand_Name
         cell.desc.text = data.brand_Description
-        cell.logo.image = UIImage(named:"add-logo")
-        let logo = UIImage(data:data.brand_Logo as! Data)
+        let logo = UIImage(data:data.brand_Logo! as Data)
+        if logo == nil{
+            cell.logo.image = UIImage(named:"add-logo")
+        }
         cell.logo.image = logo
         cell.modifiedDate.text  = data.last_Modified_Date
         cell.pcount.text = data.product_Count
